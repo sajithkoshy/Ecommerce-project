@@ -23,6 +23,7 @@ export class CartDetailsComponent implements OnInit {
 
     // get a handle to the cart items
     this.cartItems = this.cartService.cartItems;
+    console.log(this.cartItems)
 
     // subscribe to the cart totalPrice
     this.cartService.totalPrice.subscribe(
@@ -30,7 +31,7 @@ export class CartDetailsComponent implements OnInit {
     );
 
     // subscribe to the cart totalQuantity
-    this.cartService.totalQuantity.subscribe( 
+    this.cartService.totalQuantity.subscribe(
       data => this.totalQuantity = data
     );
 
