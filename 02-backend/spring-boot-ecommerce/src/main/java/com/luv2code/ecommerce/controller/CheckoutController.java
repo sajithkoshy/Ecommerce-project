@@ -20,6 +20,8 @@ public class CheckoutController {
     public PurchaseResponse placeOrder(@RequestBody Purchase purchase) {
 
         PurchaseResponse purchaseResponse = checkoutService.placeOrder(purchase);
+        log.info("checking");
+        This is extra line for checking;
 
         return purchaseResponse;
     }
