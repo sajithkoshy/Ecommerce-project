@@ -21,6 +21,7 @@ public class CheckoutController {
 
         PurchaseResponse purchaseResponse = checkoutService.placeOrder(purchase);
         log.info("checking");
+        This is extra line for checking;
 
         return purchaseResponse;
     }
